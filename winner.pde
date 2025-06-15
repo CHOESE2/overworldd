@@ -38,8 +38,10 @@ void winner() {
   image(phone, phonex, phoney);
   object(fbx, fby);
   image(FBOWL, fbx, fby, fbw, fbh);
-  object(Obx, Oby);
-  image(Obook, Obx, Oby, Obw, Obh);
+  
+  
+  //object(Obx, Oby);
+  //image(Obook, Obx, Oby, Obw, Obh);
 
 
 
@@ -209,38 +211,38 @@ void object (float x, float y) {
   }
 
 
-  if (BOY.robinx > 210 && BOY.robinx < 290 && BOY.robiny > 325  && BOY.robiny < 395 && !MEWOCAT) {
-    fill(0);
-    textSize(15);
-    rect(100, 420, 400, 45);
-    fill(255);
-    text("ROBIN: hmm..a book..with words..", 120, 450);
-  }
+//  if (BOY.robinx > 210 && BOY.robinx < 290 && BOY.robiny > 325  && BOY.robiny < 395 && !MEWOCAT) {
+//    fill(0);
+//    textSize(15);
+//    rect(100, 420, 400, 45);
+//    fill(255);
+//    text("ROBIN: hmm..a book..with words..", 120, 450);
+//  }
   
-   if (BOY.robinx > 210 && BOY.robinx < 290 && BOY.robiny > 325  && BOY.robiny < 395 && MEWOCAT) {
-    fill(0);
-    textSize(15);
-    rect(100, 420, 400, 45);
-    fill(255, 0, 0);
-    text("ROBIN:   'MEWO's watching' ", 120, 450);
-  }
+//   if (BOY.robinx > 210 && BOY.robinx < 290 && BOY.robiny > 325  && BOY.robiny < 395 && MEWOCAT) {
+//    fill(0);
+//    textSize(15);
+//    rect(100, 420, 400, 45);
+//    fill(255, 0, 0);
+//    text("ROBIN:   'MEWO's watching' ", 120, 450);
+//  }
 
 
-  if (GIRL.roix > 210 &&  GIRL.roix < 290 && GIRL.roiy > 325  && GIRL.roiy < 395 && !MEWOCAT) {
-    fill(0);
-    textSize(15);
-    rect(100, 420, 430, 45);
-    fill(255);
-    text("ROI: ' how to read for dummies ' ", 120, 450);
-  }
+//  if (GIRL.roix > 210 &&  GIRL.roix < 290 && GIRL.roiy > 325  && GIRL.roiy < 395 && !MEWOCAT) {
+//    fill(0);
+//    textSize(15);
+//    rect(100, 420, 430, 45);
+//    fill(255);
+//    text("ROI: ' how to read for dummies ' ", 120, 450);
+//  }
   
-  if (GIRL.roix > 210 &&  GIRL.roix < 290 && GIRL.roiy > 325  && GIRL.roiy < 395 && MEWOCAT) {
-    fill(0);
-    textSize(15);
-    rect(70, 420, 470, 45);
-    fill(255);
-    text("ROI:  ' how to set up a spider funeral ' ", 85, 450);
-  }
+//  if (GIRL.roix > 210 &&  GIRL.roix < 290 && GIRL.roiy > 325  && GIRL.roiy < 395 && MEWOCAT) {
+//    fill(0);
+//    textSize(15);
+//    rect(70, 420, 470, 45);
+//    fill(255);
+//    text("ROI:  ' how to set up a spider funeral ' ", 85, 450);
+//  }
   
   
   
@@ -298,3 +300,6 @@ void object (float x, float y) {
 
 //to return back into the bedroom not rREALLt sure, but probably gotta change a few focal points of the room not just MEWO and words
 //polish up SHOP bounderies
+
+
+
