@@ -67,10 +67,7 @@ void shop() {
   //&& knifeCO && MEWOCAT
 
 
-
-
-
-  image(door1, 125, 75, 80, 100); //made other door boolean  // door you can't go back ://
+  image(door1, 125, 75, 80, 100);
   stroke(brown);
   fill(255);
   door(430, 320);
@@ -108,13 +105,27 @@ if (dist(BOY.robinx, BOY.robiny, 300, 517) < BOY.robinw / 2 && mode == SHOP) {
  
  
  
- 
+ //book variables
+
+  image(Obook, Obx, Oby, Obw, Obh);
+  bookT(Obx, Oby);
 
 
 
 
-  //to do:
-  //add doors, frames, home decor, changes modes when dist of player is certain distance from the door
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -267,3 +278,33 @@ void tactile (int x, int y, int w, int h) {
     stroke(0, 0, 255);
   } else stroke(255);
 }
+
+
+
+void bookT(float x, float y){
+  
+  if (BOY.robinx > 300 && BOY.robinx < 400 && BOY.robiny > 410 && BOY.robiny < 450) {
+    fill(0);
+    textSize(15);
+    rect(100, 480, 400, 45);
+    fill(255);
+    text("ROBIN: hmm..a book..with words..", 120, 510);
+  }
+  
+
+  if (GIRL.roix > 300 &&  GIRL.roix < 400 && GIRL.roiy > 410  && GIRL.roiy < 450) {
+    fill(0);
+    textSize(15);
+    rect(70, 480, 470, 45);
+    fill(255);
+    text("ROI:  ' how to set up a spider funeral ' ", 85, 510);
+  }
+}
+
+
+
+
+
+
+
+
